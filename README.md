@@ -15,15 +15,10 @@ Coursera Assignment - Tidy Data
 ### run_analysis.R
 The script comprises of 4 functions:
 
-  1. `getFeatures(string)`
-  2. `combineFiles(string,string)`
-  3. `relabelActivity(string,data.frame)`
-  4. `start(string)`
-
-#### getFeatures(string)
+#### 1.  getFeatures(string)
 This function takes in the location of the data set, and returns the sanitized labels of the accelerometers measurements.
 
-#### combineFiles(string,string)
+#### 2.  combineFiles(string,string)
 This function takes in 2 string inputs: 
 
 1. location of data set, and
@@ -35,10 +30,10 @@ and returns a data.frame with the following columns
 2. Activity Type
 3. Mean and Standard deviation for each measurement
 
-#### relabelActivity(string,data.frame)
+#### 3. relabelActivity(string,data.frame)
 This function takes in the location of the data set, and the corresponding data.frame of the data set. It relabels the `Activity` with the corresponding descriptive labels (e.g. WALKING), and returns the new data.frame.  
 
-#### start(string)
+#### 4. start(string)
 This is the entry point for the script. This function takes in the location of the data set, and returns the aggregated tidy data.frame (see step 6 of Assignment). 
 
 ### Executing run_analysis.R
