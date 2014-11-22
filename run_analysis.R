@@ -1,8 +1,14 @@
 # return the list of features in a data row
 getFeatures = function(loc)
 {
+  # read in the features available
   tmp = read.table(paste(loc,"features.txt",sep='/'))
-  tmp = make.names(tmp$V2)
+  # ensure the labels are valid column names, and beautify the column names by replacing multiple '.' with a single '.'.
+  tmp = gsub('\\.+','.',make.names(tmp$V2))
+  # replace the trailing '.' if any
+  tmp = gsub('\\.$','',tmp)
+  # clean up the labels where 'Body' is repeated
+  gsub('BodyBody','Body',tmp)
 }
 
 # return a data set with columns: Subject, Activity, Features with Mean & Std
@@ -27,8 +33,6 @@ relabelActivity = function(loc,data)
 {
   # reorder data by Subject
   data = data[order(data$Subject),]
-  # make SUbject a factor
-  data$Subject = as.factor(data$Subject)
   # read the labels for activities
   tmp = read.table(paste(loc,"activity_labels.txt",sep='/'))
   # relabel the activity col into factor
