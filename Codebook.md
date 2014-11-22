@@ -29,24 +29,24 @@ Factor to indicate what is the corresponding activity type for the measurements.
 The remaining variables are the `Mean` measurements for each Activity for each Subject. 
 
 ##### Measurements Glossary
-The prefix `t` indicates the measurement to be in the time domain.
-The prefix `f` indicates the measurement to be in the frequency domain.
-The label `Gravity` indicates the measurement is due to the gravity.
-The label `Body` indicates the measurement is due to the body movements.
-The label `Acc` indicates the measurement comes from the accelerometer.
-The label `Gyro` indicates the measurements comes from the gyroscope.
-The label `mean` indicates the measurements is the mean value reading.
-The label `std` indicates the measurements is the standard deviation of the reading.
-The label `meanFreq` indicates the measurement is the weighted average of the frequency components to obtain a mean frequency.
-The label `X`, `Y`, and `Z` indicates the direction of the measurements.
+* The prefix `t` indicates the measurement to be in the time domain.
+* The prefix `f` indicates the measurement to be in the frequency domain.
+* The label `Gravity` indicates the measurement is due to the gravity.
+* The label `Body` indicates the measurement is due to the body movements.
+* The label `Acc` indicates the measurement comes from the accelerometer.
+* The label `Gyro` indicates the measurements comes from the gyroscope.
+* The label `mean` indicates the measurements is the mean value reading.
+* The label `std` indicates the measurements is the standard deviation of the reading.
+* The label `meanFreq` indicates the measurement is the weighted average of the frequency components to obtain a mean frequency.
+* The label `X`, `Y`, and `Z` indicates the direction of the measurements.
 
 The remaining measurements 
 
-`gravityMean`, 
-`tBodyAccMean`, 
-`tBodyAccJerkMean`, 
-`tBodyGyroMean`, 
-`tBodyGyroJerkMean`
+* `gravityMean`, 
+* `tBodyAccMean`, 
+* `tBodyAccJerkMean`, 
+* `tBodyGyroMean`, 
+* `tBodyGyroJerkMean`
 
 are the measurements after averaging the signals in a signal window sample. 
 
