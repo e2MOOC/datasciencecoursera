@@ -5,16 +5,16 @@ Coursera Assignment - Codebook
 [UCI HAR Dataset](https://github.com/eterna2/datasciencecoursera/tree/master/UCI%20HAR%20Dataset)
 
 ####Data Used: 
-[Test Data - Activity Labels](https://github.com/eterna2/datasciencecoursera/blob/master/UCI%20HAR%20Dataset/test/y_test.txt)
-[Test Data - Subjects](https://github.com/eterna2/datasciencecoursera/blob/master/UCI%20HAR%20Dataset/test/subject_train.txt)
-[Test Data - Measurements](https://github.com/eterna2/datasciencecoursera/blob/master/UCI%20HAR%20Dataset/test/X_test.txt)
-[Training Data - Activity Labels](https://github.com/eterna2/datasciencecoursera/blob/master/UCI%20HAR%20Dataset/train/y_train.txt)
-[Training Data - Subjects](https://github.com/eterna2/datasciencecoursera/blob/master/UCI%20HAR%20Dataset/train/subject_train.txt)
-[Training Data - Measurements](https://github.com/eterna2/datasciencecoursera/blob/master/UCI%20HAR%20Dataset/train/X_train.txt)
+1. [Test Data - Activity Labels](https://github.com/eterna2/datasciencecoursera/blob/master/UCI%20HAR%20Dataset/test/y_test.txt)
+2. [Test Data - Subjects](https://github.com/eterna2/datasciencecoursera/blob/master/UCI%20HAR%20Dataset/test/subject_train.txt)
+3. [Test Data - Measurements](https://github.com/eterna2/datasciencecoursera/blob/master/UCI%20HAR%20Dataset/test/X_test.txt)
+4. [Training Data - Activity Labels](https://github.com/eterna2/datasciencecoursera/blob/master/UCI%20HAR%20Dataset/train/y_train.txt)
+5. [Training Data - Subjects](https://github.com/eterna2/datasciencecoursera/blob/master/UCI%20HAR%20Dataset/train/subject_train.txt)
+6. [Training Data - Measurements](https://github.com/eterna2/datasciencecoursera/blob/master/UCI%20HAR%20Dataset/train/X_train.txt)
 
-####Data type: Wide-format
-####No. of Observations: 180
-####No. of Variables: 81
+#####Data type: Wide-format
+#####No. of Observations: 180
+#####No. of Variables: 81
 
 #### Variable descriptions
 ##### 1. Subject
