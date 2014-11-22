@@ -1,10 +1,10 @@
 Coursera Assignment - Codebook
 ===================
 
-###Dataset Source:
+####Dataset Source:
 [UCI HAR Dataset](https://github.com/eterna2/datasciencecoursera/tree/master/UCI%20HAR%20Dataset)
 
-###Data Used: 
+####Data Used: 
 [Test Data - Activity Labels](https://github.com/eterna2/datasciencecoursera/blob/master/UCI%20HAR%20Dataset/test/y_test.txt)
 [Test Data - Subjects](https://github.com/eterna2/datasciencecoursera/blob/master/UCI%20HAR%20Dataset/test/subject_train.txt)
 [Test Data - Measurements](https://github.com/eterna2/datasciencecoursera/blob/master/UCI%20HAR%20Dataset/test/X_test.txt)
@@ -12,23 +12,21 @@ Coursera Assignment - Codebook
 [Training Data - Subjects](https://github.com/eterna2/datasciencecoursera/blob/master/UCI%20HAR%20Dataset/train/subject_train.txt)
 [Training Data - Measurements](https://github.com/eterna2/datasciencecoursera/blob/master/UCI%20HAR%20Dataset/train/X_train.txt)
 
-###Data type: Wide-format
+####Data type: Wide-format
+####No. of Observations: 180
+####No. of Variables: 81
 
-###No. of Observations: 180
-
-###No. of Variables: 81
-
-### Variable descriptions
-#### Subject
+#### Variable descriptions
+##### 1. Subject
 Integer to indicate which subject the measurements are taken from. Ranges from 1 to 30.
 
-#### Activity
+##### 2. Activity
 Factor to indicate what is the corresponding activity type for the measurements. Activity can be one of the following: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS,SITTING, STANDING, and LAYING.
 
-#### Measurements
+##### 3. Measurements
 The remaining variables are the `Mean` measurements for each Activity for each Subject. 
 
-##### Measurements Glossary
+###### Measurements Glossary
 * The prefix `t` indicates the measurement to be in the time domain.
 * The prefix `f` indicates the measurement to be in the frequency domain.
 * The label `Gravity` indicates the measurement is due to the gravity.
@@ -53,7 +51,7 @@ are the measurements after averaging the signals in a signal window sample.
 ###### Note
 The measurement variables are the `Mean` measurements for each Activity for each Subject (e.g. mean of mean for `gravityMean` by Activity and Subject).
 
-###Transformation Steps Taken:
+#### Transformation Steps Taken:
 1. Measurements that are not `mean` or `std` are removed.
 2. Subjects, Activity, and Measurements were combined into a single Table for Test and Training data respectively.
 3. Training data is appended to Test data.
