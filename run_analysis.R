@@ -1,3 +1,10 @@
+# return the list of features in a data row
+getFeatures = function(loc)
+{
+  tmp = read.table(paste(loc,"features.txt",sep='/'))
+  tmp = make.names(tmp$V2)
+}
+
 # return a data set with columns: Subject, Activity, Features with Mean & Std
 combineFiles = function(loc,testortrain)
 {
@@ -30,12 +37,6 @@ relabelActivity = function(loc,data)
   data
 }
 
-# return the list of features in a data row
-getFeatures = function(loc)
-{
-  tmp = read.table(paste(loc,"features.txt",sep='/'))
-  tmp = make.names(tmp$V2)
-}
 
 # start the process
 start = function(loc)
@@ -48,5 +49,4 @@ start = function(loc)
   data = with(data, aggregate(data[,3:81], list(Subject = Subject,Activity = Activity), FUN = mean))
 }
 
-loc = "UCI HAR Dataset";
-start(loc)
+write.table(start("UCI HAR Dataset"),file="tidydata.txt",row.names=FALSE)
